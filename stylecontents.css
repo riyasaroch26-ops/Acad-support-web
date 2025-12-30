@@ -1,0 +1,122 @@
+
+    /* ===== General Page Styling ===== */
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #e6f2ff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* ===== Header ===== */
+    header {
+      text-align: center;
+      background: #3399ff;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* ===== Section Headings ===== */
+    section h2 {
+      color: #003366;
+      border-bottom: 3px solid #3399ff;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Section Layout ===== */
+    section {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
+
+    /* ===== Lists ===== */
+    ul, ol {
+      padding-left: 40px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    /* ===== Course Cards ===== */
+    .course-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .course-card {
+      background: white;
+      border: 2px solid #3399ff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-card img {
+      width: 80%;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    /* ===== Links ===== */
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #3399ff;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .course-card img {
+        width: 90%;
+      }
+    }

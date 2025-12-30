@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML (HyperText Markup Language) — Reference</title>
+  <link rel="stylesheet" href="stylehtml.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>HTML (HyperText Markup Language)</h1>
+      <h3>Reference &amp; Learning Portal — complete tag list + tutorials</h3>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+      <!-- 1) Overview -->
+      <section class="card" id="overview">
+        <h2>Overview</h2>
+        <p><strong>HTML</strong> (HyperText Markup Language) is the foundation of web development. It provides the structure of web pages using tags and elements. Paired with CSS (for presentation) and JavaScript (for interactivity), HTML forms the core of modern websites and web apps.</p>
+      </section>
+
+      <!-- 2) File Structure -->
+      <section class="card" id="file-structure">
+        <h2>HTML File Structure (Typical)</h2>
+        <p>Below is a minimal valid HTML document and what the parts mean.</p>
+        <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello world&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+        <ul>
+          <li><b>&lt;!DOCTYPE html&gt;</b> — declares HTML5 document type.</li>
+          <li><b>&lt;head&gt;</b> — metadata, title, links to styles and scripts.</li>
+          <li><b>&lt;body&gt;</b> — visible page content.</li>
+        </ul>
+      </section>
+
+      <!-- 3) Common elements -->
+      <section class="card" id="common-elements">
+        <h2>Common HTML Elements (with examples)</h2>
+        <div class="row">
+          <div class="col">
+            <h3 style="margin-bottom:8px">Headings & Text</h3>
+            <p><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>.</p>
+            <pre>&lt;h1&gt;Title&lt;/h1&gt;
+&lt;p&gt;This is a &lt;strong&gt;paragraph&lt;/strong&gt; with &lt;em&gt;emphasis&lt;/em&gt;.&lt;/p&gt;</pre>
+          </div>
+          <div class="col">
+            <h3 style="margin-bottom:8px">Media & Links</h3>
+            <p><code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>.</p>
+            <pre>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;
+&lt;img src="image.jpg" alt="desc"&gt;</pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4) Attributes table -->
+      <section class="card" id="attributes">
+        <h2>Important HTML Attributes</h2>
+        <table class="mini-table" aria-label="attributes">
+          <thead>
+            <tr><th>Attribute</th><th>What it does</th><th>Example</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>id</td><td>Unique identifier for an element (used by CSS/JS)</td><td>&lt;div id="intro"&gt;&lt;/div&gt;</td></tr>
+            <tr><td>class</td><td>Group elements for styling or JS</td><td>&lt;span class="badge"&gt;New&lt;/span&gt;</td></tr>
+            <tr><td>href</td><td>URL for links</td><td>&lt;a href="page.html"&gt;Link&lt;/a&gt;</td></tr>
+            <tr><td>src</td><td>Source for images/scripts</td><td>&lt;img src="logo.png"&gt;</td></tr>
+            <tr><td>alt</td><td>Accessible text for images</td><td>&lt;img src="x" alt="logo"&gt;</td></tr>
+            <tr><td>type / name / value</td><td>Form control attributes</td><td>&lt;input type="text" name="user"&gt;</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 5) Interactive demo editor -->
+      <section class="card" id="interactive">
+        <h2>Interactive HTML Editor & Live Preview</h2>
+        <p>Type HTML in the left panel and click <em>Run</em> to see a live preview. (Sandboxed preview for safety.)</p>
+        <div class="editor-wrap">
+          <div>
+            <textarea id="liveHtml" aria-label="HTML editor sample">
+<!-- Try this sample -->
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h2&gt;Live Preview&lt;/h2&gt;
+    &lt;p&gt;Edit this HTML and press Run.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </textarea>
+            <div style="margin-top:8px; display:flex; gap:8px;">
+              <button id="runBtn" style="padding:8px 12px; border-radius:8px; border:none; background:#00509e; color:white; cursor:pointer;">Run</button>
+              <button id="resetBtn" style="padding:8px 12px; border-radius:8px; border:1px solid #cfd8e3; background:white; cursor:pointer;">Reset</button>
+            </div>
+          </div>
+          <div>
+            <iframe id="preview" class="preview-iframe" sandbox="allow-same-origin"></iframe>
+          </div>
+        </div>
+        <small style="color:#666; display:block; margin-top:8px;">Note: Scripts are disabled in the preview to keep it safe. Replace the sandbox or remove attributes if you intentionally want to allow scripts (not recommended).</small>
+      </section>
+
+      <!-- 6) History timeline with images -->
+      <section class="card" id="history">
+        <h2>History & Timeline of HTML</h2>
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li><b>1991:</b> Tim Berners-Lee creates the first HTML.</li>
+              <li><b>1996:</b> HTML 2.0 and later HTML 3/4 introduce more tags and structure.</li>
+              <li><b>1999:</b> Widespread adoption of HTML 4.</li>
+              <li><b>2014 - present:</b> HTML5 becomes the modern standard (semantic tags, multimedia, APIs).</li>
+            </ul>
+            <p>HTML evolved from simple markup to a powerful platform enabling multimedia and web applications.</p>
+          </div>
+          <div class="col image-box">
+            <img src="history(1).jpeg" alt="HTML History timeline illustration">
+            <figcaption style="font-size:0.9rem; color:#666;"></figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7) HTML vs CSS vs JS -->
+      <section class="card" id="comparison">
+        <h2>HTML vs CSS vs JavaScript — Quick Comparison</h2>
+        <table class="mini-table" aria-label="comparison">
+          <thead><tr><th>Technology</th><th>Role</th></tr></thead>
+          <tbody>
+            <tr><td>HTML</td><td>Structure / content of web pages (elements & tags)</td></tr>
+            <tr><td>CSS</td><td>Presentation / layout / visual styling</td></tr>
+            <tr><td>JavaScript</td><td>Behavior / interactivity / dynamic content</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 8) Semantic tags -->
+      <section class="card" id="semantic">
+        <h2>Semantic HTML Tags (Why they matter)</h2>
+        <p>Semantic tags communicate meaning to browsers, search engines, and assistive tech. Use them for better accessibility and SEO.</p>
+        <ul>
+          <li><code>&lt;header&gt;</code> — page or section header</li>
+          <li><code>&lt;nav&gt;</code> — navigation links</li>
+          <li><code>&lt;main&gt;</code> — main content</li>
+          <li><code>&lt;article&gt;</code> — self-contained article</li>
+          <li><code>&lt;aside&gt;</code> — sidebar or tangential content</li>
+          <li><code>&lt;footer&gt;</code> — footer content</li>
+        </ul>
+      </section>
+
+      <!-- 9) HTML5 features -->
+      <section class="card" id="html5">
+        <h2>HTML5: Modern Features & Examples</h2>
+        <ul>
+          <li><b>Multimedia:</b> &lt;video&gt; and &lt;audio&gt; tags (no plugins needed).</li>
+          <li><b>Canvas:</b> &lt;canvas&gt; for 2D/3D drawing with JavaScript.</li>
+          <li><b>Form improvements:</b> new input types and validation.</li>
+          <li><b>APIs:</b> Geolocation, Web Storage, Web Workers, Service Workers, etc.</li>
+        </ul>
+        <div class="row" style="align-items:center;">
+          <div class="col image-box">
+            <img src="features of html.png" alt="HTML5 features illustration" style="max-width:320px;">
+            <figcaption style="color:#666; font-size:0.9rem;"></figcaption>
+          </div>
+          <div class="col">
+            <h4>Video example</h4>
+            <video controls width="100%" style="max-width:420px; border-radius:8px;">
+              <source src="html intro.mp4" type="video/mp4">
+            </video>
+            <small style="display:block; color:#666; margin-top:6px;"></small>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10) Editors & Tools -->
+      <section class="card" id="editors">
+        <h2>HTML Editors & Tools</h2>
+        <div class="row">
+          <div class="col">
+            <p>Popular editors for HTML development:</p>
+            <ul>
+              <li><b>VS Code</b> — full-featured, extensions for HTML/CSS/JS</li>
+              <li><b>Sublime Text</b> — lightweight and fast</li>
+              <li><b>Brackets</b> — live preview focus for front-end</li>
+              <li><b>CodePen / JSFiddle / Repl.it</b> — online playgrounds</li>
+            </ul>
+          </div>
+          <div class="col image-box">
+            <img src="HTML-Editor-Tools.webp" alt="Code editor screenshot placeholder">
+            <figcaption style="color:#666; font-size:0.9rem;"></figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11) Practical uses & importance -->
+      <section class="card" id="uses">
+        <h2>Practical Uses & Importance of HTML</h2>
+        <ul>
+          <li>Creates page structure (headings, paragraphs, images, links).</li>
+          <li>Forms the base for websites, blogs, web apps, and documentation.</li>
+          <li>Essential for accessibility and SEO when used semantically.</li>
+          <li>Used in email templates, documentation, and hybrid mobile apps (via WebViews).</li>
+        </ul>
+      </section>
+
+      <!-- 12) Small quiz -->
+      <section class="card" id="quiz">
+        <h2>Quick Quiz — Test Your Knowledge</h2>
+        <div class="quiz" id="quizWrap">
+          <p><strong>Q:</strong> What does HTML stand for?</p>
+          <div class="choice" data-correct="false">HyperText Machine Language</div>
+          <div class="choice" data-correct="true">HyperText Markup Language</div>
+          <div class="choice" data-correct="false">Hyperlink and Text Markup Language</div>
+          <div class="choice" data-correct="false">Home Tool Markup Language</div>
+          <div style="margin-top:8px;">
+            <button id="resetQuiz" style="padding:8px 12px; border-radius:8px; border:1px solid #cfd8e3; background:white; cursor:pointer;">Reset</button>
+          </div>
+          <div id="quizResult" style="margin-top:8px; font-weight:600;"></div>
+        </div>
+      </section>
+
+      <!-- 13) References & resources -->
+      <section class="card" id="resources">
+        <h2>References & Further Learning</h2>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs — HTML</a></li>
+          <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">W3Schools — HTML Tutorial</a></li>
+          <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" rel="noopener">FreeCodeCamp — Responsive Web Design</a></li>
+        </ul>
+      </section>
+
+      <!-- 14) Tags table card with search -->
+      <section class="card table-card" id="tags-section">
+        <h2>Complete HTML Tags Reference (118 tags)</h2>
+
+        <div class="table-wrapper">
+          <!-- search -->
+          <div class="search-bar">
+            <input id="tagSearch" type="search" placeholder="Search tags here" aria-label="Search tags here">
+          </div>
+          <!-- table -->
+          <div class="table-scroll" role="region" aria-label="HTML tags table">
+            <table id="tagsTable" aria-describedby="tagsDescription">
+              <thead>
+                <tr><th>Tag</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <!-- 118 cleaned & corrected entries -->
+                <tr><td class="tag">&lt;!DOCTYPE&gt;</td><td class="desc">Declaration that defines this document as HTML5.</td></tr>
+                <tr><td class="tag">&lt;a&gt;</td><td class="desc">Defines a hyperlink to other pages, locations, or resources.</td></tr>
+                <tr><td class="tag">&lt;abbr&gt;</td><td class="desc">Represents an abbreviation or acronym, with an optional expansion.</td></tr>
+                <tr><td class="tag">&lt;address&gt;</td><td class="desc">Contact information for the author/owner of a document or article.</td></tr>
+                <tr><td class="tag">&lt;area&gt;</td><td class="desc">Defines an area inside an image-map (for clickable regions).</td></tr>
+                <tr><td class="tag">&lt;article&gt;</td><td class="desc">Defines an independent, self-contained piece of content.</td></tr>
+                <tr><td class="tag">&lt;aside&gt;</td><td class="desc">Represents content tangentially related to the main content (sidebar).</td></tr>
+                <tr><td class="tag">&lt;audio&gt;</td><td class="desc">Embeds sound content into a document.</td></tr>
+                <tr><td class="tag">&lt;b&gt;</td><td class="desc">Bold text for stylistic offset (use &lt;strong&gt; for importance).</td></tr>
+                <tr><td class="tag">&lt;base&gt;</td><td class="desc">Specifies the base URL/target for relative URLs in a document.</td></tr>
+                <tr><td class="tag">&lt;basefont&gt;</td><td class="desc">(Deprecated) Used to set default font for a document; avoid in modern HTML.</td></tr>
+                <tr><td class="tag">&lt;bdo&gt;</td><td class="desc">Overrides the current text direction (e.g., rtl or ltr).</td></tr>
+                <tr><td class="tag">&lt;blockquote&gt;</td><td class="desc">Section quoted from another source; usually longer quotations.</td></tr>
+                <tr><td class="tag">&lt;body&gt;</td><td class="desc">Contains the content of the document (what's visible to users).</td></tr>
+                <tr><td class="tag">&lt;br&gt;</td><td class="desc">Line break; forces a new line.</td></tr>
+                <tr><td class="tag">&lt;button&gt;</td><td class="desc">Clickable button (used in forms or for scripts).</td></tr>
+                <tr><td class="tag">&lt;canvas&gt;</td><td class="desc">Drawable region for graphics via JavaScript.</td></tr>
+                <tr><td class="tag">&lt;caption&gt;</td><td class="desc">Title or caption for a table (&lt;table&gt; child).</td></tr>
+                <tr><td class="tag">&lt;cite&gt;</td><td class="desc">Represents the title of a work (citation).</td></tr>
+                <tr><td class="tag">&lt;code&gt;</td><td class="desc">Computer code snippet; monospaced font by convention.</td></tr>
+                <tr><td class="tag">&lt;col&gt;</td><td class="desc">Specifies column properties in a &lt;colgroup&gt;.</td></tr>
+                <tr><td class="tag">&lt;colgroup&gt;</td><td class="desc">Groups columns in a table for styling and attributes.</td></tr>
+                <tr><td class="tag">&lt;data&gt;</td><td class="desc">Links a piece of content with a machine-readable value.</td></tr>
+                <tr><td class="tag">&lt;datalist&gt;</td><td class="desc">Provides a list of predefined options for an &lt;input&gt;.</td></tr>
+                <tr><td class="tag">&lt;dd&gt;</td><td class="desc">Description of a term in a description list (&lt;dl&gt;).</td></tr>
+                <tr><td class="tag">&lt;del&gt;</td><td class="desc">Represents deleted text/changes (often shown struck through).</td></tr>
+                <tr><td class="tag">&lt;details&gt;</td><td class="desc">Creates a widget that the user can open/close to reveal details.</td></tr>
+                <tr><td class="tag">&lt;dfn&gt;</td><td class="desc">Represents the defining instance of a term (definition).</td></tr>
+                <tr><td class="tag">&lt;dialog&gt;</td><td class="desc">Represents a dialog box or window.</td></tr>
+                <tr><td class="tag">&lt;div&gt;</td><td class="desc">Generic block-level container for grouping content.</td></tr>
+                <tr><td class="tag">&lt;dl&gt;</td><td class="desc">Description list; pairs &lt;dt&gt; and &lt;dd&gt; elements.</td></tr>
+                <tr><td class="tag">&lt;dt&gt;</td><td class="desc">Term/name in a description list (&lt;dl&gt;).</td></tr>
+                <tr><td class="tag">&lt;em&gt;</td><td class="desc">Emphasized text; typically rendered in italics.</td></tr>
+                <tr><td class="tag">&lt;embed&gt;</td><td class="desc">Embeds external content (e.g., plugin content).</td></tr>
+                <tr><td class="tag">&lt;fieldset&gt;</td><td class="desc">Groups related form controls together with an optional legend.</td></tr>
+                <tr><td class="tag">&lt;figcaption&gt;</td><td class="desc">Caption for a &lt;figure&gt; element.</td></tr>
+                <tr><td class="tag">&lt;figure&gt;</td><td class="desc">Self-contained piece of content, often with a caption (image).</td></tr>
+                <tr><td class="tag">&lt;footer&gt;</td><td class="desc">Defines the footer for a document or section.</td></tr>
+                <tr><td class="tag">&lt;form&gt;</td><td class="desc">Collects user input and sends data to a server or script.</td></tr>
+                <tr><td class="tag">&lt;h1&gt; - &lt;h6&gt;</td><td class="desc">Heading elements (h1 is highest/most important, h6 lowest).</td></tr>
+                <tr><td class="tag">&lt;head&gt;</td><td class="desc">Metadata container: title, meta tags, links to styles/scripts.</td></tr>
+                <tr><td class="tag">&lt;header&gt;</td><td class="desc">Introductory content or navigation for a page/section.</td></tr>
+                <tr><td class="tag">&lt;hr&gt;</td><td class="desc">Thematic break or horizontal rule; separates content.</td></tr>
+                <tr><td class="tag">&lt;html&gt;</td><td class="desc">Root element of an HTML document.</td></tr>
+                <tr><td class="tag">&lt;i&gt;</td><td class="desc">Italic text for alternate voice or mood (use &lt;em&gt; for emphasis).</td></tr>
+                <tr><td class="tag">&lt;iframe&gt;</td><td class="desc">Embeds another HTML page inside the current page.</td></tr>
+                <tr><td class="tag">&lt;img&gt;</td><td class="desc">Embeds an image into the document.</td></tr>
+                <tr><td class="tag">&lt;input&gt;</td><td class="desc">Interactive control for form data (text, checkbox, radio, etc.).</td></tr>
+                <tr><td class="tag">&lt;ins&gt;</td><td class="desc">Represents inserted text, often shown underlined.</td></tr>
+                <tr><td class="tag">&lt;kbd&gt;</td><td class="desc">Represents user input from a keyboard; typically monospaced.</td></tr>
+                <tr><td class="tag">&lt;keygen&gt;</td><td class="desc">(Deprecated) Key-pair generator for forms; avoid in modern use.</td></tr>
+                <tr><td class="tag">&lt;label&gt;</td><td class="desc">Defines a label for an &lt;input&gt; control (improves accessibility).</td></tr>
+                <tr><td class="tag">&lt;legend&gt;</td><td class="desc">Caption for a &lt;fieldset&gt; group.</td></tr>
+                <tr><td class="tag">&lt;li&gt;</td><td class="desc">A list item for &lt;ul&gt; or &lt;ol&gt;.</td></tr>
+                <tr><td class="tag">&lt;link&gt;</td><td class="desc">Links an external resource, e.g., stylesheet or icon.</td></tr>
+                <tr><td class="tag">&lt;main&gt;</td><td class="desc">Unique content of the document; main region for a page.</td></tr>
+                <tr><td class="tag">&lt;map&gt;</td><td class="desc">Defines an image map for clickable areas.</td></tr>
+                <tr><td class="tag">&lt;mark&gt;</td><td class="desc">Highlights text for reference or importance.</td></tr>
+                <tr><td class="tag">&lt;menu&gt;</td><td class="desc">Represents a list/menu of commands (deprecated/limited usage).</td></tr>
+                <tr><td class="tag">&lt;menuitem&gt;</td><td class="desc">Defines a command/menu item (limited support).</td></tr>
+                <tr><td class="tag">&lt;meta&gt;</td><td class="desc">Metadata about the document (charset, viewport, description).</td></tr>
+                <tr><td class="tag">&lt;meter&gt;</td><td class="desc">Represents a scalar gauge within a known range.</td></tr>
+                <tr><td class="tag">&lt;nav&gt;</td><td class="desc">Section with navigation links (main site navigation).</td></tr>
+                <tr><td class="tag">&lt;noscript&gt;</td><td class="desc">Fallback content displayed if scripts are disabled.</td></tr>
+                <tr><td class="tag">&lt;object&gt;</td><td class="desc">Embeds external resources like plugins or data.</td></tr>
+                <tr><td class="tag">&lt;ol&gt;</td><td class="desc">Ordered list (numbered).</td></tr>
+                <tr><td class="tag">&lt;optgroup&gt;</td><td class="desc">Groups related &lt;option&gt; elements in a &lt;select&gt;.</td></tr>
+                <tr><td class="tag">&lt;option&gt;</td><td class="desc">Option in a dropdown list (&lt;select&gt;).</td></tr>
+                <tr><td class="tag">&lt;output&gt;</td><td class="desc">Represents the result of a calculation or user action.</td></tr>
+                <tr><td class="tag">&lt;p&gt;</td><td class="desc">Paragraph of text.</td></tr>
+                <tr><td class="tag">&lt;param&gt;</td><td class="desc">Parameter for an embedded object (&lt;object&gt;).</td></tr>
+                <tr><td class="tag">&lt;picture&gt;</td><td class="desc">Container for responsive images with multiple sources.</td></tr>
+                <tr><td class="tag">&lt;pre&gt;</td><td class="desc">Preformatted text; preserves whitespace and line breaks.</td></tr>
+                <tr><td class="tag">&lt;progress&gt;</td><td class="desc">Displays progress of a task (progress bar).</td></tr>
+                <tr><td class="tag">&lt;q&gt;</td><td class="desc">Short inline quotation.</td></tr>
+                <tr><td class="tag">&lt;rp&gt;</td><td class="desc">Parenthesis for ruby fallback when not supported.</td></tr>
+                <tr><td class="tag">&lt;rt&gt;</td><td class="desc">Pronunciation or annotation for ruby text.</td></tr>
+                <tr><td class="tag">&lt;ruby&gt;</td><td class="desc">Ruby annotations for East-Asian typography.</td></tr>
+                <tr><td class="tag">&lt;s&gt;</td><td class="desc">Represents text no longer accurate (strikethrough).</td></tr>
+                <tr><td class="tag">&lt;samp&gt;</td><td class="desc">Sample output from a program; monospaced.</td></tr>
+                <tr><td class="tag">&lt;script&gt;</td><td class="desc">Embedded or external script (usually JavaScript).</td></tr>
+                <tr><td class="tag">&lt;section&gt;</td><td class="desc">Thematic grouping of content (section of a page).</td></tr>
+                <tr><td class="tag">&lt;select&gt;</td><td class="desc">Drop-down list control in forms.</td></tr>
+                <tr><td class="tag">&lt;small&gt;</td><td class="desc">Smaller-print text (fine print).</td></tr>
+                <tr><td class="tag">&lt;source&gt;</td><td class="desc">Specifies media source for &lt;picture&gt; or &lt;video&gt; / &lt;audio&gt;.</td></tr>
+                <tr><td class="tag">&lt;span&gt;</td><td class="desc">Inline container for text, used for styling small parts.</td></tr>
+                <tr><td class="tag">&lt;strong&gt;</td><td class="desc">Important text; generally bold.</td></tr>
+                <tr><td class="tag">&lt;style&gt;</td><td class="desc">Embedded CSS styles for a document.</td></tr>
+                <tr><td class="tag">&lt;sub&gt;</td><td class="desc">Subscript text.</td></tr>
+                <tr><td class="tag">&lt;summary&gt;</td><td class="desc">Visible heading for a &lt;details&gt; element.</td></tr>
+                <tr><td class="tag">&lt;sup&gt;</td><td class="desc">Superscript text.</td></tr>
+                <tr><td class="tag">&lt;table&gt;</td><td class="desc">Table for tabular data.</td></tr>
+                <tr><td class="tag">&lt;tbody&gt;</td><td class="desc">Groups the body content in a table.</td></tr>
+                <tr><td class="tag">&lt;td&gt;</td><td class="desc">Cell in a table row.</td></tr>
+                <tr><td class="tag">&lt;template&gt;</td><td class="desc">Holds inert DOM content that can be cloned via script.</td></tr>
+                <tr><td class="tag">&lt;textarea&gt;</td><td class="desc">Multiline text input control in forms.</td></tr>
+                <tr><td class="tag">&lt;tfoot&gt;</td><td class="desc">Groups the footer content in a table.</td></tr>
+                <tr><td class="tag">&lt;th&gt;</td><td class="desc">Header cell in a table (table heading).</td></tr>
+                <tr><td class="tag">&lt;thead&gt;</td><td class="desc">Groups the header content in a table.</td></tr>
+                <tr><td class="tag">&lt;time&gt;</td><td class="desc">Represents a specific time or date/time.</td></tr>
+                <tr><td class="tag">&lt;title&gt;</td><td class="desc">Title of the document (shown in browser tab).</td></tr>
+                <tr><td class="tag">&lt;track&gt;</td><td class="desc">Text track for media elements (subtitles/captions).</td></tr>
+                <tr><td class="tag">&lt;u&gt;</td><td class="desc">Underlined text for stylistic notation (use carefully).</td></tr>
+                <tr><td class="tag">&lt;ul&gt;</td><td class="desc">Unordered list (bulleted).</td></tr>
+                <tr><td class="tag">&lt;var&gt;</td><td class="desc">Represents a variable name in programming contexts.</td></tr>
+                <tr><td class="tag">&lt;video&gt;</td><td class="desc">Embeds video media into a document.</td></tr>
+                <tr><td class="tag">&lt;wbr&gt;</td><td class="desc">Suggests a line break opportunity within text (word break).</td></tr>
+                <tr><td class="tag">&lt;portal&gt;</td><td class="desc">(Experimental) Embeds a navigable portal document.</td></tr>
+                <tr><td class="tag">&lt;slot&gt;</td><td class="desc">Placeholder inside web components for external content.</td></tr>
+                <tr><td class="tag">&lt;big&gt;</td><td class="desc">(Deprecated) Renders larger text; use CSS instead.</td></tr>
+                <tr><td class="tag">&lt;center&gt;</td><td class="desc">(Deprecated) Centers content; use CSS instead.</td></tr>
+                <tr><td class="tag">&lt;font&gt;</td><td class="desc">(Deprecated) Font styling; avoid, use CSS instead.</td></tr>
+                <tr><td class="tag">&lt;strike&gt;</td><td class="desc">(Deprecated) Strikethrough text; use &lt;s&gt; or CSS.</td></tr>
+                <tr><td class="tag">&lt;tt&gt;</td><td class="desc">(Deprecated) Teletype text; use CSS or &lt;code&gt; instead.</td></tr>
+                <tr><td class="tag">&lt;dir&gt;</td><td class="desc">(Deprecated) Directory list; use &lt;ul&gt; instead.</td></tr>
+                <tr><td class="tag">&lt;menuitem&gt;</td><td class="desc">(Deprecated/limited) Menu item; limited browser support.</td></tr>
+                <tr><td class="tag">&lt;command&gt;</td><td class="desc">(Deprecated) Command button; avoid in modern HTML.</td></tr>
+                <tr><td class="tag">&lt;applet&gt;</td><td class="desc">(Removed) Java applets; obsolete and insecure.</td></tr>
+                <tr><td class="tag">&lt;acronym&gt;</td><td class="desc">(Deprecated) Acronym element; use &lt;abbr&gt; instead.</td></tr>
+                <tr><td class="tag">&lt;keygen&gt;</td><td class="desc">(Deprecated) Key-pair generator; not recommended.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p><strong>➡️ BACK TO <a href="contents.html" target="_blank">CONTENTS</a></strong></p>
+      <p><STRONG>⬅️ BACK TO <a href="index.html">HOME</a></STRONG></p>
+      <p>© 2025 Web Development Academic Support | VIT Pune</p>
+    </footer>
+  </div>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="htmljs.js"></script>
+
+</body>
+</html>

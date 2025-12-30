@@ -1,0 +1,169 @@
+
+    /* ===== Global Styles ===== */
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f0f8ff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #003366;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, #0077cc, #66b3ff);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 8px;
+    }
+
+    /* ===== Navigation Bar ===== */
+    nav {
+      background: #e0f0ff;
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #003366;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    /* ===== Section Styling ===== */
+    section {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section img {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin: 15px 0;
+    }
+
+    ul, ol {
+      padding-left: 40px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    /* ===== Code Block ===== */
+    pre {
+      background: #e8f0ff;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      border-left: 5px solid #0077cc;
+    }
+
+    code {
+      font-family: "Courier New", monospace;
+      color: #003366;
+    }
+
+    /* ===== Table ===== */
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      border: 2px solid #0077cc;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #cce5ff;
+    }
+
+    td {
+      background-color: #f5faff;
+    }
+
+    /* ===== Video & Links ===== */
+    #video a {
+      display: inline-block;
+      background: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    #video a:hover {
+      background: #005fa3;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+    }

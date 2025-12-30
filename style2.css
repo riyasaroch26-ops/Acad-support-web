@@ -1,0 +1,118 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full page setup */
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Background video */
+#bgVideo {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Login box container */
+.auth-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 350px;
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Login heading */
+.auth-box h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Input fields */
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+
+  border: none;
+  outline: none;
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* Placeholder text */
+.auth-box input::placeholder {
+  color: #dddddd;
+}
+
+/* Login button */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+/* Button hover effect */
+.auth-box button:hover {
+  opacity: 0.85;
+}
+
+
+
+/*====bg video====*/
+#bgVideo {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none; /* ⭐ FIX */
+}
+
+
+
+/* ===== LOGOUT BUTTON ===== */
+.logout-btn {
+  float: right;
+  background: red;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}

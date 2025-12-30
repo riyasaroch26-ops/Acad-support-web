@@ -1,0 +1,163 @@
+ header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    background-image: url("w.png");
+    background-size:cover;
+    width:100%;
+    height:400px;
+    }
+    /* RESET DEFAULT BROWSER STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+ header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    background-image: url("w.png");
+    background-size:cover;
+    width:100%;
+    height:400px;
+    }
+
+    nav {
+      background-color: #396fa4;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 50px 50px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+   
+
+/* MAIN CONTENT */
+main {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* SECTIONS */
+section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #1e293b;
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* PARAGRAPH */
+section p {
+  margin-bottom: 15px;
+}
+
+/* ROADMAP LIST */
+.roadmap {
+  padding-left: 20px;
+}
+
+.roadmap li {
+  margin-bottom: 10px;
+}
+
+/* PROJECTS LIST */
+.projects {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.projects li {
+  margin-bottom: 8px;
+}
+
+/* FAQS */
+.faqs {
+  list-style: none;
+}
+
+.faqs li {
+  background: #f1f5f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #38bdf8;
+  border-radius: 5px;
+}
+
+/* FEEDBACK FORM */
+.feedback-box {
+  margin-top: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 14px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  background-color: #38bdf8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #0284c7;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}

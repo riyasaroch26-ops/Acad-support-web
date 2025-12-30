@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/auth.js"></script>
+  <script src="../js/validate.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <h2>Create Account</h2>
+
+  <div id="error" class="error"></div>
+  <div id="success" class="success"></div>
+
+  <input type="text" id="name" placeholder="Full Name" required>
+
+  <input type="email" id="email" placeholder="Email" required>
+
+  <input type="password" id="password"
+         placeholder="Password"
+         onkeyup="checkStrength(this.value)" required>
+  <span class="toggle-password" id="togglePass" onclick="togglePassword('password','togglePass')">Show</span>
+
+  <div class="strength"><div class="strength-bar"></div></div>
+
+  <input type="password" id="confirm" placeholder="Confirm Password" required>
+
+  <button onclick="signup()">Create Account</button>
+
+  <div class="link">
+    <a href="javascript.html">Already have an account? Login</a>
+  </div>
+</div>
+
+<script>
+function signup() {
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const pass = document.getElementById("password").value.trim();
+  const confirm = document.getElementById("confirm").value.trim();
+  const error = document.getElementById("error");
+  const success = document.getElementById("success");
+
+  error.style.display = "none";
+  success.style.display = "none";
+
+  if (pass !== confirm) {
+    error.textContent = "Passwords do not match!";
+    error.style.display = "block";
+    return;
+  }
+
+  const user = {name, email, password: pass};
+
+  if (registerUser(user)) {
+    success.textContent = "Account created! Redirecting...";
+    success.style.display = "block";
+
+    setTimeout(() => window.location.href = "c grid.html", 1500);
+  } else {
+    error.textContent = "This email is already registered.";
+    error.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

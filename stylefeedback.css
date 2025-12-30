@@ -1,0 +1,77 @@
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #325979, #378994);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h2, h3 {
+            text-align: center;
+            color: #15191c;
+            margin-bottom: 20px;
+        }
+
+        .feedback-card {
+            background-color: #f1f2f5;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(54, 68, 175, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feedback-card:hover {
+            transform: translateY(-5px);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: 700;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        button[type="submit"] {
+            background-color: #0a4b76;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #005f99;
+        }
+
+        .rating label {
+            font-size: 1.6em;
+            cursor: pointer;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            color: #2b77aa;
+            text-decoration: none;
+            font-weight: bold;
+        }

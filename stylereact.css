@@ -1,0 +1,207 @@
+
+    /* ===== GLOBAL STYLES ===== */
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f5faff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      color: #003366;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+
+    h2 {
+      border-bottom: 3px solid #3399ff;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #0056b3;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #003366;
+    }
+
+    hr {
+      border: 0;
+      border-top: 2px solid #3399ff;
+      margin: 30px auto;
+      width: 90%;
+    }
+
+    section {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #3399ff;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      background-color: #cce6ff;
+      text-align: center;
+      padding: 15px 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      font-weight: 600;
+      color: #003366;
+    }
+
+    nav a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    /* ===== IMAGES ===== */
+    img {
+      display: block;
+      margin: 15px auto;
+      border-radius: 10px;
+    }
+
+    /* ===== TABLES ===== */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: #fff;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e6f0ff;
+      color: #003366;
+    }
+
+    /* ===== CODE BLOCK ===== */
+    pre {
+      background-color: #f0f8ff;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    code {
+      color: #c7254e;
+      font-family: "Courier New", monospace;
+    }
+
+    /* ===== FEEDBACK FORM ===== */
+    form {
+      background: #e6ecff;
+      border-radius: 10px;
+      padding: 25px;
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    input[type="submit"] {
+      background: #3399ff;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #2673cc;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #3399ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        padding: 10px;
+        font-size: 0.95rem;
+      }
+
+      table, th, td {
+        font-size: 0.9rem;
+      }
+
+      form {
+        width: 95%;
+      }
+    }

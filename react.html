@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React.js - Frontend Library</title>
+  <meta name="description" content="Learn about React.js, its features, syntax, and applications in web development." />
+  <meta name="author" content="Riya Saroch, VIT Pune" />
+  <link rel="stylesheet" href="stylereact.css">
+</head>
+
+<body>
+  <!-- ===== HEADER SECTION ===== -->
+  <header>
+    <h1>React.js - The Power of Modern Web Interfaces</h1>
+    <p><b>A JavaScript Library for Building User Interfaces</b></p>
+  </header>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="#about">About</a> |
+    <a href="#features">Features</a> |
+    <a href="#components">Components</a> |
+    <a href="#example">Example</a> |
+    <a href="#resources">Resources</a> |
+    <a href="#feedback">Feedback</a>
+  </nav>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <h2>About React.js</h2>
+    <img src="react.jpg" width="40%" alt="React Logo" title="React JS Logo" />
+    <p>
+      <b>React.js</b> is an open-source JavaScript library developed by <i>Facebook</i> in 2013. It helps developers build fast, interactive, and dynamic user interfaces 
+      using reusable components. React follows the concept of a <b>Virtual DOM</b> for efficient updates and rendering.
+    </p>
+    <blockquote cite="https://reactjs.org/">
+      "React makes it painless to create interactive UIs. Design simple views for each state in your application."
+    </blockquote>
+  </section>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section id="features">
+    <h2>Key Features of React</h2>
+    <ul>
+      <li>Component-Based Architecture</li>
+      <li>Virtual DOM for faster performance</li>
+      <li>Declarative programming style</li>
+      <li>Unidirectional data flow</li>
+      <li>Strong community and ecosystem</li>
+      <li>JSX – JavaScript Syntax Extension</li>
+    </ul>
+
+    <details>
+      <summary><b>💡 Did You Know?</b></summary>
+      <p>React was initially developed for Facebook’s News Feed and Instagram applications.</p>
+    </details>
+  </section>
+
+  <!-- ===== COMPONENTS SECTION ===== -->
+  <section id="components">
+    <h2>React Components</h2>
+    <p>Components are the building blocks of React applications. They can be classified into different types:</p>
+
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>Functional Components</td>
+        <td>Stateless components written as JavaScript functions.</td>
+        <td><code>function Welcome() { return &lt;h1&gt;Hello&lt;/h1&gt;; }</code></td>
+      </tr>
+      <tr>
+        <td>Class Components</td>
+        <td>Components with state and lifecycle methods.</td>
+        <td><code>class Welcome extends React.Component { render() { return &lt;h1&gt;Hi&lt;/h1&gt;; }}</code></td>
+      </tr>
+      <tr>
+        <td>Pure Components</td>
+        <td>Optimized components that prevent unnecessary re-rendering.</td>
+        <td><code>React.PureComponent</code></td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- ===== EXAMPLE SECTION ===== -->
+  <section id="example">
+    <h2>React Code Example</h2>
+    <p>Here’s a simple React component example:</p>
+
+    <pre><code>
+// React Component Example
+function App() {
+    return (
+        &lt;div&gt;
+            &lt;h1&gt;Welcome to React!&lt;/h1&gt;
+            &lt;p&gt;Building UI with reusable components.&lt;/p&gt;
+        &lt;/div&gt;
+    );
+}
+    </code></pre>
+
+    <img src="react.jpg" width="70%" alt="React UI Example" title="Example of React UI" />
+
+    <p>The above code defines a simple <mark>functional component</mark> named <b>App</b> that displays a heading and a paragraph.</p>
+  </section>
+
+  <!-- ===== VIDEO SECTION ===== -->
+  <section id="video">
+    <h2>React Tutorial Video</h2>
+    <p>
+      📺 Watch a helpful tutorial here:
+      <a href="https://youtu.be/RGKi6LSPDLU?si=oqeCwVN0iJyLg8t7" target="_blank">React Tutorial (YouTube)</a>
+    </p>
+  </section>
+
+  <!-- ===== RESOURCES SECTION ===== -->
+  <section id="resources">
+    <h2>React Learning Resources</h2>
+    <ol>
+      <li><a href="https://react.dev" target="_blank">Official React Website</a></li>
+      <li><a href="https://reactjs.org/docs/getting-started.html" target="_blank">React Documentation</a></li>
+      <li><a href="https://www.w3schools.com/react/" target="_blank">W3Schools React Tutorial</a></li>
+      <li><a href="https://www.freecodecamp.org/news/tag/react/" target="_blank">FreeCodeCamp React Guides</a></li>
+    </ol>
+  </section>
+
+  <!-- ===== FEEDBACK FORM ===== -->
+  <section id="feedback">
+    <h2>Feedback Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback here..."></textarea>
+
+      <input type="submit" value="Submit Feedback" />
+    </form>
+  </section>
+
+  <!-- ===== FOOTER SECTION ===== -->
+  <footer>
+    <p>&copy; 2025 React Learning Hub | Designed by <b>Riya Saroch</b>, VIT Pune</p>
+    <p>📧 <a href="mailto:riyasaroch34@gmail.com">Contact Developer</a></p>
+    <p><a href="index.html">⬅️Back to home</a></p>
+  </footer>
+
+  <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Your jQuery + EmailJS Code -->
+<script src="react.js"></script>
+
+</body>
+</html>

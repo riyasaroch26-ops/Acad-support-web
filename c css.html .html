@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS (Cascading Style Sheets)</title>
+  <link rel="stylesheet" href="stylecss.css">
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>CSS (Cascading Style Sheets)</h1>
+    <h3>Understanding How to Design and Beautify Web Pages</h3>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- Introduction -->
+    <div class="section">
+      <h2>Introduction to CSS</h2>
+      <p>
+        <b>CSS (Cascading Style Sheets)</b> is used to control the layout and appearance of web pages. 
+        It allows you to style HTML elements by changing colors, fonts, spacing, and positioning. 
+        With CSS, you can make web pages more visually appealing and improve user experience.
+      </p>
+    </div>
+
+    <!-- Features -->
+    <div class="section">
+      <h2>Key Features of CSS</h2>
+      <ul>
+        <li>CSS separates content from design, making web development easier to manage.</li>
+        <li>It enables responsive design for different devices and screen sizes.</li>
+        <li>Supports animations, transitions, and advanced visual effects.</li>
+        <li>Allows reusability through external stylesheets linked across multiple pages.</li>
+        <li>Improves accessibility and loading speed by reducing inline styling.</li>
+      </ul>
+    </div>
+
+    <!-- Image Box -->
+    <div class="section image-box">
+      <img src="css(1).jpeg" alt="CSS Logo Placeholder" />
+      <p><b>Learn more about CSS:</b></p>
+      <p>
+        Visit <a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS Tutorial</a><br />
+        or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a>
+      </p>
+    </div>
+
+    <!-- Example -->
+    <div class="section">
+      <h2>Example CSS Syntax</h2>
+      <pre>
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+      </pre>
+    </div>
+
+    <!-- Facts -->
+    <div class="section">
+      <details>
+        <summary>Did You Know?</summary>
+        <p>CSS was first proposed by Håkon Wium Lie in 1994 while working with Tim Berners-Lee.</p>
+      </details>
+
+      <details>
+        <summary>CSS Versions Overview</summary>
+        <ul>
+          <li>CSS1 — Introduced in 1996 for basic styling.</li>
+          <li>CSS2 — Added positioning and z-index in 1998.</li>
+          <li>CSS3 — Introduced modular design and media queries.</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- Advanced Concepts -->
+    <div class="section">
+      <h2>Advanced Concepts in CSS</h2>
+      <p>Modern CSS introduces several advanced techniques that make web pages more dynamic and efficient:</p>
+      <ul>
+        <li><b>Flexbox</b> — Simplifies layout alignment and spacing in one-dimensional layouts.</li>
+        <li><b>CSS Grid</b> — Perfect for creating two-dimensional layouts with rows and columns.</li>
+        <li><b>Variables (Custom Properties)</b> — Enable reusability and theming with cleaner code.</li>
+        <li><b>Transitions & Animations</b> — Add motion and interactivity to web elements.</li>
+        <li><b>Media Queries</b> — Help in building responsive designs for all screen sizes.</li>
+      </ul>
+      <div class="image-box">
+        <img src="advanced css.jpg" alt="Advanced CSS Concepts Placeholder">
+      </div>
+    </div>
+
+    <!-- Flexbox Playground -->
+    <div class="section">
+      <h2>Live Flexbox Playground</h2>
+      <div class="playground">
+        <div class="controls">
+          <label><b>Flex Direction:</b></label>
+          <select id="flexDirection">
+            <option value="row">Row</option>
+            <option value="row-reverse">Row Reverse</option>
+            <option value="column">Column</option>
+            <option value="column-reverse">Column Reverse</option>
+          </select>
+
+          <label><b>Justify Content:</b></label>
+          <select id="justifyContent">
+            <option value="center">Center</option>
+            <option value="flex-start">Flex Start</option>
+            <option value="flex-end">Flex End</option>
+            <option value="space-around">Space Around</option>
+            <option value="space-between">Space Between</option>
+          </select>
+        </div>
+
+        <div class="flex-container" id="flexContainer">
+          <div class="flex-item">1</div>
+          <div class="flex-item">2</div>
+          <div class="flex-item">3</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p><strong>➡️ BACK TO <a href="contents.html" target="_blank">CONTENTS</a></strong></p>
+    <p><STRONG>⬅️ BACK TO <a href="index.html">HOME</a></STRONG></p>
+    <p><small>© 2025 Web Development Academic Support | VIT Pune</small></p>
+  </footer>
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="scriptcss.js"></script>
+
+ 
+</body>
+</html>
